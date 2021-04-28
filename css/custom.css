@@ -1,0 +1,97 @@
+.red-main {
+    background-color: #b60404 !important;
+}
+
+.black-main {
+    background-color: #000000d9 !important;
+}
+
+.t-red {
+    color: #b60404;
+}
+
+.clear {
+    margin: 0;
+    padding: 0;
+}
+
+h1.nome {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.parallax-container {
+    background: linear-gradient(180deg, #00000061, transparent);
+}
+
+img.arrow {
+    position: absolute !important;
+    margin: 0 auto !important;
+    opacity: 1 !important;
+    min-width: auto !important;
+    min-height: auto !important;
+    width: 50px !important;
+    animation: 1.5s linear 1s infinite alternate seta;
+}
+
+@keyframes seta {
+    from {
+        bottom: 10%;
+    }
+    to {
+        bottom: 5%;
+    }
+}
+
+div#sobre,
+div#conhecimentos {
+    text-align: end;
+}
+
+div#sobre p {
+    text-align: justify;
+}
+
+.list-conhecimentos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.list-conhecimentos p {
+    border: 1px solid #b60404;
+    padding: 10px 20px;
+    color: #b60404;
+    font: bolder 12pt arial;
+    text-align: center;
+}
+
+div#contato ul li {
+    list-style-type: none;
+    margin: 10px 0;
+}
+
+div#contato ul li a {
+    display: flex;
+    align-items: center;
+    font: normal 14pt arial;
+    color: white;
+}
+
+div#contato ul li a ion-icon {
+    margin-right: 9px;
+    font-size: 24pt;
+}
+
+footer {
+    background-color: #000000d9;
+    color: white;
+    text-align: center;
+    font: normal 14px arial;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
