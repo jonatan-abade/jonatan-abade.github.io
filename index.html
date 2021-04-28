@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/materialize.css">
     <link rel="stylesheet" href="css/custom.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
 
     <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io//favicon-16x16.png">
+
     <link rel="manifest" href="favicon_io/site.webmanifest">
 
     <title>Jonatan Abade</title>
@@ -28,14 +28,27 @@
                     <li><a href="#portfolio">Portfólio</a></li>
                     <li><a href="#conhecimentos">conhecimentos</a></li>
                     <li><a href="#contato">Contato</a></li>
-                    </li>
                 </ul>
             </div>
         </nav>
     </div>
+
+    <ul id="slide-out" class="sidenav">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre">Sobre mim</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#conhecimentos">conhecimentos</a></li>
+        <li><a href="#contato">Contato</a></li>
+    </ul>
+    <div class="navbar-fixed black-main">
+        <a href="#" data-target="slide-out" class="sidenav-trigger">
+            <ion-icon name="menu-sharp"></ion-icon>
+            Menu</a>
+    </div>
+
     <div class="parallax-container section scrollspy" id="inicio">
         <div class="parallax">
-            <img width="100%" src="imgs/pexels-tranmautritam-251225.jpg">
+            <img width="100%" src="imgs/pexels-tranmautritam.jpg">
             <h1 class="nome"><span style="color: #ff0505;">Jonatan</span> <span class="white-text">Abade</span></h1>
             <img width="15px" class="arrow" src="imgs/arrow-down.svg" alt="">
         </div>
@@ -54,7 +67,7 @@
     </div>
 
     <div class="parallax-container">
-        <div class="parallax"><img width="100%" src="imgs/pexels-marc-mueller-325111.jpg"></div>
+        <div class="parallax"><img width="100%" src="imgs/pexels-marc-mueller.jpg"></div>
 
         <div id="portfolio" class="section scrollspy">
             <div class="container">
@@ -91,7 +104,7 @@
     </div>
 
     <div class="parallax-container">
-        <div class="parallax"><img width="100%" src="imgs/pexels-pixabay-267350.jpg"></div>
+        <div class="parallax"><img width="100%" src="imgs/pexels-pixabay.jpg"></div>
 
         <div id="contato" class="section scrollspy">
             <div class="container">
@@ -125,6 +138,7 @@
     <script>
         M.AutoInit()
     </script>
+    <script src="js/functions.js"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
 

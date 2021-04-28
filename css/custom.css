@@ -15,6 +15,25 @@
     padding: 0;
 }
 
+.navbar-fixed.black-main {
+    position: relative;
+}
+
+a.sidenav-trigger {
+    margin-left: 5px;
+    font-size: 16pt;
+    display: flex;
+    align-items: center;
+    color: white;
+    position: absolute;
+    top: 30%;
+}
+
+a.sidenav-trigger ion-icon {
+    font-size: 24pt;
+    margin-left: 5px;
+}
+
 h1.nome {
     position: absolute;
     top: 20%;
