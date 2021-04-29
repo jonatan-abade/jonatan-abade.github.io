@@ -86,7 +86,8 @@ div#conhecimentos {
     text-align: end;
 }
 
-div#sobre p {
+div#sobre p,
+div#conhecimentos p {
     text-align: justify;
 }
 
@@ -125,6 +126,11 @@ div#contato .container {
     padding: 0 15px 15px 15px;
 }
 
+div#portfolio .container {
+    background-color: #00000096;
+    padding: 0 15px 15px 15px;
+}
+
 div#contato ul li a ion-icon {
     margin-right: 9px;
     font-size: 22pt;
@@ -138,4 +144,32 @@ footer {
     padding: 15px 0;
     width: 100%;
     bottom: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        margin: 10px auto;
+        font-size: 36pt;
+    }
+    .list-conhecimentos {
+        justify-content: space-between;
+    }
+    .list-conhecimentos p {
+        margin: 10px 0;
+    }
+    h1.nome {
+        font-size: 46pt;
+        text-align: center;
+    }
+    img.arrow {
+        animation: 750ms linear 1s infinite alternate seta;
+    }
+    @keyframes seta {
+        from {
+            bottom: 0%;
+        }
+        to {
+            bottom: 2.5%;
+        }
+    }
 }
