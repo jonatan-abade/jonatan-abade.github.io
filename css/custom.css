@@ -182,6 +182,9 @@ footer {
     img.arrow {
         animation: 750ms linear 1s infinite alternate seta;
     }
+    .parallax-container.contato {
+        height: 60vh;
+    }
     @keyframes seta {
         from {
             bottom: 0%;
