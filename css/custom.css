@@ -1,3 +1,7 @@
+body {
+    position: relative;
+}
+
 .red-main {
     background-color: #b60404 !important;
 }
@@ -34,9 +38,22 @@ a.sidenav-trigger ion-icon {
     margin-left: 5px;
 }
 
+#inicio {
+    height: 92vh;
+}
+
+.navbar-fixed nav ul li a.active {
+    background-color: #b60404;
+}
+
+.navbar-fixed nav ul li a:hover {
+    color: #b60404;
+    background-color: white;
+}
+
 h1.nome {
     position: absolute;
-    top: 20%;
+    top: 35%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 }
@@ -57,7 +74,7 @@ img.arrow {
 
 @keyframes seta {
     from {
-        bottom: 10%;
+        bottom: 0%;
     }
     to {
         bottom: 5%;
@@ -76,7 +93,6 @@ div#sobre p {
 .list-conhecimentos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .list-conhecimentos p {
@@ -85,32 +101,41 @@ div#sobre p {
     color: #b60404;
     font: bolder 12pt arial;
     text-align: center;
+    margin: 0 0 15px 7.5px;
 }
 
 div#contato ul li {
     list-style-type: none;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 div#contato ul li a {
     display: flex;
     align-items: center;
-    font: normal 14pt arial;
+    font: normal 12pt arial;
     color: white;
+}
+
+.parallax-container.contato {
+    height: 75vh;
+}
+
+div#contato .container {
+    background-color: #000000d9;
+    padding: 0 15px 15px 15px;
 }
 
 div#contato ul li a ion-icon {
     margin-right: 9px;
-    font-size: 24pt;
+    font-size: 22pt;
 }
 
 footer {
+    position: absolute;
     background-color: #000000d9;
     color: white;
     text-align: center;
-    font: normal 14px arial;
-    padding: 10px 0;
-    position: fixed;
+    padding: 15px 0;
     width: 100%;
     bottom: 0;
 }
