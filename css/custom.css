@@ -1,196 +1,205 @@
+:root {
+  --red: #b60404;
+  --black: #000000d9;
+}
 body {
-    position: relative;
+  position: relative;
 }
 
 .red-main {
-    background-color: #b60404 !important;
+  background-color: var(--red) !important;
 }
 
 .black-main {
-    background-color: #000000d9 !important;
+  background-color: var(--black) !important;
 }
 
 .t-red {
-    color: #b60404;
+  color: var(--red);
 }
 
 .clear {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar-fixed.black-main {
-    position: relative;
+  position: relative;
 }
 
 a.sidenav-trigger {
-    margin-left: 5px;
-    font-size: 16pt;
-    display: flex;
-    align-items: center;
-    color: white;
-    position: absolute;
-    top: 30%;
+  margin-left: 5px;
+  font-size: 16pt;
+  display: flex;
+  align-items: center;
+  color: white;
+  position: absolute;
+  top: 30%;
 }
 
 a.sidenav-trigger ion-icon {
-    font-size: 24pt;
-    margin-left: 5px;
+  font-size: 24pt;
+  margin-left: 5px;
 }
 
 #inicio {
-    height: 92vh;
+  height: calc(100vh - 64px);
 }
 
 .navbar-fixed nav ul li a.active {
-    background-color: #b60404;
+  background-color: var(--red);
 }
 
 .navbar-fixed nav ul li a:hover {
-    color: #b60404;
-    background-color: white;
+  color: var(--red);
+  background-color: white;
 }
-
-h1.nome {
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+.banner {
+  background: #000000ad;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+.nome {
+  font-size: 3em;
+}
+.subtitulo {
+  font-size: 1.5em;
+  padding-bottom: 1em;
 }
 
 .parallax-container {
-    background: linear-gradient(180deg, #00000061, transparent);
+  background: linear-gradient(180deg, #00000061, transparent);
 }
 
 img.arrow {
-    position: absolute !important;
-    margin: 0 auto !important;
-    opacity: 1 !important;
-    min-width: auto !important;
-    min-height: auto !important;
-    width: 50px !important;
-    animation: 1.5s linear 1s infinite alternate seta;
+  position: absolute !important;
+  margin: 0 auto !important;
+  opacity: 1 !important;
+  min-width: auto !important;
+  min-height: auto !important;
+  width: 50px !important;
+  animation: 1.5s linear 1s infinite alternate seta;
 }
 
 @keyframes seta {
-    from {
-        bottom: 0%;
-    }
-    to {
-        bottom: 5%;
-    }
+  from {
+    bottom: 0%;
+  }
+  to {
+    bottom: 5%;
+  }
 }
 
 div#portfolio ul li a {
-    color: white;
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-    margin: 10px auto;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  margin: 10px auto;
 }
 
 div#portfolio ul li ion-icon {
-    margin-right: 5px;
-    font-size: 20px;
+  margin-right: 5px;
+  font-size: 20px;
 }
 
 div#portfolio ul li a:hover {
-    color: #b60404;
-    transition: 250ms;
+  color: var(--red);
+  transition: 250ms;
 }
 
 div#sobre,
 div#conhecimentos {
-    text-align: end;
+  text-align: end;
 }
 
 div#sobre p,
 div#conhecimentos p {
-    text-align: justify;
+  text-align: justify;
 }
 
 .list-conhecimentos {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .list-conhecimentos p {
-    border: 1px solid #b60404;
-    padding: 10px 20px;
-    color: #b60404;
-    font: bolder 12pt arial;
-    text-align: center;
-    margin: 0 0 15px 7.5px;
+  border: 1px solid var(--red);
+  padding: 10px 20px;
+  color: var(--red);
+  font: bolder 12pt arial;
+  text-align: center;
+  margin: 0 0 15px 7.5px;
 }
 
 div#contato ul li {
-    list-style-type: none;
-    margin: 20px 0;
+  list-style-type: none;
+  margin: 20px 0;
 }
 
 div#contato ul li a {
-    display: flex;
-    align-items: center;
-    font: normal 12pt arial;
-    color: white;
+  display: flex;
+  align-items: center;
+  font: normal 12pt arial;
+  color: white;
 }
 
 .parallax-container.contato {
-    height: 75vh;
+  height: 75vh;
 }
 
 div#contato .container {
-    background-color: #000000d9;
-    padding: 0 15px 15px 15px;
+  background-color: var(--black);
+  padding: 0 15px 15px 15px;
 }
 
 div#portfolio .container {
-    background-color: #00000096;
-    padding: 0 15px 15px 15px;
+  background-color: #00000096;
+  padding: 0 15px 15px 15px;
 }
 
 div#contato ul li a ion-icon {
-    margin-right: 9px;
-    font-size: 22pt;
+  margin-right: 9px;
+  font-size: 22pt;
 }
 
 footer {
-    position: absolute;
-    background-color: #000000d9;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    width: 100%;
-    bottom: 0;
+  position: absolute;
+  background-color: var(--black);
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  width: 100%;
+  bottom: 0;
 }
 
 @media only screen and (max-width: 768px) {
-    h1 {
-        margin: 10px auto;
-        font-size: 36pt;
+  h1 {
+    margin: 10px auto;
+    font-size: 36pt;
+  }
+  .list-conhecimentos {
+    justify-content: space-between;
+  }
+  .list-conhecimentos p {
+    margin: 10px 0;
+  }
+  img.arrow {
+    animation: 750ms linear 1s infinite alternate seta;
+  }
+  .parallax-container.contato {
+    height: 60vh;
+  }
+  @keyframes seta {
+    from {
+      bottom: 0%;
     }
-    .list-conhecimentos {
-        justify-content: space-between;
+    to {
+      bottom: 2.5%;
     }
-    .list-conhecimentos p {
-        margin: 10px 0;
-    }
-    h1.nome {
-        font-size: 46pt;
-        text-align: center;
-    }
-    img.arrow {
-        animation: 750ms linear 1s infinite alternate seta;
-    }
-    .parallax-container.contato {
-        height: 60vh;
-    }
-    @keyframes seta {
-        from {
-            bottom: 0%;
-        }
-        to {
-            bottom: 2.5%;
-        }
-    }
+  }
 }
