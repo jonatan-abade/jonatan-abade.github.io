@@ -1,171 +1,378 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/materialize.css" />
+    <link rel="stylesheet" href="css/custom.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/materialize.css">
-    <link rel="stylesheet" href="css/custom.css">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io//favicon-16x16.png"
+    />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io//favicon-16x16.png">
-
-    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
 
     <title>Jonatan Abade</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div class="navbar-fixed">
-        <nav class="black-main">
-            <div class="nav-wrapper container">
-                <ul class="left hide-on-med-and-down">
-                    <li><a href="#inicio">Início</a></li>
-                    <li><a href="#sobre">Sobre mim</a></li>
-                    <li><a href="#portfolio">Portfólio</a></li>
-                    <li><a href="#conhecimentos">Conhecimentos</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </div>
-        </nav>
+      <nav class="black-main">
+        <div
+          class="nav-wrapper container d-flex justify-content-between"
+          style="display: flex; justify-content: space-between"
+        >
+          <ul class="left hide-on-med-and-down">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre mim</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#conhecimentos">Conhecimentos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+          <ul class="contact-header">
+            <li>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/jonatan-abade/"
+              >
+                <ion-icon
+                  style="font-size: 1.5em"
+                  name="logo-linkedin"
+                ></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://github.com/jonatan-abade">
+                <ion-icon
+                  style="font-size: 1.5em"
+                  name="logo-github"
+                ></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://wa.me/5567992617425">
+                <ion-icon
+                  style="font-size: 1.5em"
+                  name="logo-whatsapp"
+                ></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="mailto:jonatanabade@gmail.com">
+                <ion-icon style="font-size: 1.5em" name="mail"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
 
     <ul id="slide-out" class="sidenav">
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#sobre">Sobre mim</a></li>
-        <li><a href="#portfolio">Portfólio</a></li>
-        <li><a href="#conhecimentos">Conhecimentos</a></li>
-        <li><a href="#contato">Contato</a></li>
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#sobre">Sobre mim</a></li>
+      <li><a href="#portfolio">Portfólio</a></li>
+      <li><a href="#conhecimentos">Conhecimentos</a></li>
+      <li><a href="#contato">Contato</a></li>
     </ul>
     <div class="navbar-fixed black-main">
-        <a href="#" data-target="slide-out" class="sidenav-trigger">
-            <ion-icon name="menu-sharp"></ion-icon>
-            Menu</a>
+      <a href="#" data-target="slide-out" class="sidenav-trigger">
+        <ion-icon name="menu-sharp"></ion-icon>
+        Menu</a
+      >
     </div>
 
     <div class="parallax-container section scrollspy" id="inicio">
-        <div class="parallax">
-            <img src="imgs/pexels-tranmautritam.jpg">
-            <div class="banner">
-                <div class="nome"><span class="red-text">Jonatan</span> <span class="white-text">Abade</span></div>
-                <div class="subtitulo"><span class="white-text">Desenvolvedor</span> <span class="red-text">Full Stack</span></div>
-            </div>
-            <img width="15px" class="arrow" src="imgs/arrow-down.svg" alt="">
+      <div class="parallax">
+        <img src="imgs/pexels-tranmautritam.jpg" />
+        <div class="banner">
+          <div class="nome">
+            <span class="red-text">Jonatan</span>
+            <span class="white-text">Abade</span>
+          </div>
+          <div class="subtitulo">
+            <span class="white-text">Desenvolvedor</span>
+            <span class="red-text">Full Stack</span>
+          </div>
         </div>
+        <img width="15px" class="arrow" src="imgs/arrow-down.svg" alt="" />
+      </div>
     </div>
 
     <div id="sobre" class="section scrollspy">
-        <div class="container">
-            <h1 class="t-red">Sobre mim</h1>
-            <p>Olá, meu nome é Jonatan Vitor Abade, tenho 23 anos e sou programador full stack. Como profissional meu objetivo é solucionar problemas, trabalho desde 2020 na área de desenvolvimento, já participei de mais de 15 projetos incluindo sites e
-                aplicativos, que cumpriram o papel de facilitar inúmeros usuários a realizarem suas tarefas.
-                <br> Atualmente estou graduando em sistemas para internet pelo Instituto Federal de MS (IFMS), e junto de cursos externos, estou sempre evoluindo tanto no front-end quanto no back-end.
-                <br>Nas horas livres, amo jogar video games, assistir séries e andar de moto e de skate.
-            </p>
-        </div>
-    </div>
+      <div class="container">
+        <h1 class="t-red">Sobre mim</h1>
+        <p>
+          💻 Desenvolvedor Web Full Stack com mais de 5 anos de experiência,
+          atuando em projetos de diversos segmentos como financeiro,
+          educacional, gestão empresarial (ERP) e outros. Atualmente trabalho na
+          Ubistart, empresa especializada em soluções digitais sob medida para
+          diferentes portes e setores.
+        </p>
+
+        <p>
+          👨‍💻 Na prática, contribuo no desenvolvimento de aplicações web e APIs
+          utilizando PHP (Laravel) e JavaScript (Vue.js/Nuxt.js), seguindo boas
+          práticas com foco em performance, manutenibilidade e experiência do
+          usuário. Tenho sólida base em MVC, RESTful APIs, e integração com
+          sistemas de terceiros.
+        </p>
+
+        <p>
+          🚀 Sou movido por desafios técnicos e pela oportunidade de resolver
+          problemas reais por meio da tecnologia. Valorizo código limpo,
+          colaboração e aprendizado contínuo.
+        </p>
+
+        <p>
+          📈 Busco constantemente evoluir como desenvolvedor e entregar soluções
+          que realmente façam a diferença para os usuários e para o negócio.
+        </p>
+      </div>
     </div>
 
     <div class="parallax-container">
-        <div class="parallax"><img src="imgs/pexels-marc-mueller.jpg"></div>
+      <div class="parallax"><img src="imgs/pexels-marc-mueller.jpg" /></div>
 
-        <div id="portfolio" class="section scrollspy">
-            <div class="container">
-                <h1 class="t-red">Portfólio</h1>
-                <h6 class="white-text">Aqui estão listados alguns dos meus projetos postados no GitHub
-                </h6>
-                <ul>
-                    <li>
-                        <a href="">
-                            <ion-icon name="rocket-outline"></ion-icon> Está landing page</a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <ion-icon name="rocket-outline"></ion-icon> Sistema de eventos</a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <ion-icon name="rocket-outline"></ion-icon> Jogo do Adivinha</a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <ion-icon name="rocket-outline"></ion-icon> Site de noticias</a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <ion-icon name="rocket-outline"></ion-icon> Jogo da velha</a>
-                    </li>
-                </ul>
-            </div>
-
+      <div id="portfolio" class="section scrollspy">
+        <div class="container">
+          <h1 class="t-red">Portfólio</h1>
+          <h6 class="white-text">
+            Aqui estão listados alguns dos meus projetos postados no GitHub
+          </h6>
+          <ul>
+            <li>
+              <a href="">
+                <ion-icon name="rocket-outline"></ion-icon> Está landing page</a
+              >
+            </li>
+            <li>
+              <a href="">
+                <ion-icon name="rocket-outline"></ion-icon> Sistema de
+                eventos</a
+              >
+            </li>
+            <li>
+              <a href="">
+                <ion-icon name="rocket-outline"></ion-icon> Jogo do Adivinha</a
+              >
+            </li>
+            <li>
+              <a href="">
+                <ion-icon name="rocket-outline"></ion-icon> Site de noticias</a
+              >
+            </li>
+            <li>
+              <a href="">
+                <ion-icon name="rocket-outline"></ion-icon> Jogo da velha</a
+              >
+            </li>
+          </ul>
         </div>
+      </div>
     </div>
 
     <div id="conhecimentos" class="section scrollspy">
-        <div class="container">
-            <h1 class="t-red">Conhecimentos</h1>
-            <p>Estou sempre atento ao mercado e lendo sobre as áreas envolvidas com meu dia a dia, incorporando novas tecnologias e métodos conforme minhas necessidades e dos projetos.
-            </p>
-            <div class="list-conhecimentos">
-                <p>PHP 7</p>
-                <p>HTML 5</p>
-                <p>CSS 3</p>
-                <p>JavaScript</p>
-                <p>Java</p>
-                <p>MVC</p>
-                <p>Laravel</p>
-                <p>React JS</p>
-                <p>MVC</p>
-                <p>SQL</p>
-                <p>Inglês</p>
-                <p>Git</p>
-                <p>GitHub</p>
-            </div>
+      <div class="container">
+        <h1 class="t-red">Conhecimentos</h1>
+        <p>
+          Estou em constante atualização, acompanhando o mercado e estudando
+          áreas estratégicas relacionadas ao meu trabalho. Integro novas
+          tecnologias e metodologias de forma prática, sempre alinhando inovação
+          às necessidades dos projetos em que atuo.
+        </p>
+        <div class="list-conhecimentos">
+          <p>
+            <img
+              height="32"
+              width="32"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v14/icons/php.svg"
+            />PHP
+          </p>
+          <p>
+            <img
+              height="32"
+              width="32"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v14/icons/laravel.svg"
+            />
+            Laravel
+          </p>
+          <p>
+            <img
+              height="32"
+              width="32"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v14/icons/javascript.svg"
+            />
+            JavaScript
+          </p>
+          <p>
+            <img
+              height="32"
+              width="32"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v14/icons/vuedotjs.svg"
+            />
+            Vue
+          </p>
+          <p>
+            <img
+              height="32"
+              width="32"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v14/icons/git.svg"
+            />Git
+          </p>
+          <p>
+            <img
+              height="32"
+              width="32"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v14/icons/docker.svg"
+            />Docker
+          </p>
+          <p>
+            <img
+              height="32"
+              width="32"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v14/icons/nuxt.svg"
+            />Nuxt
+          </p>
+          <p>
+            <img
+              height="32"
+              width="32"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v14/icons/vuetify.svg"
+            />Vuetify
+          </p>
+          <p>
+            <img
+              height="32"
+              width="32"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v14/icons/bootstrap.svg"
+            />Bootstrap
+          </p>
+          <p>
+            <img
+              height="32"
+              width="32"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v14/icons/tailwindcss.svg"
+            />Tailwind CSS
+          </p>
+          <p>
+            <img
+              height="32"
+              width="32"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v14/icons/nodedotjs.svg"
+            />Node JS
+          </p>
+          <p>
+            <img
+              height="32"
+              width="32"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v14/icons/typescript.svg"
+            />TypeScript
+          </p>
+          <p>
+            <img
+              height="32"
+              width="32"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v14/icons/mysql.svg"
+            />MySQL
+          </p>
+          <p>
+            <img
+              height="32"
+              width="32"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v14/icons/html5.svg"
+            />HTML
+          </p>
+          <p>
+            <img
+              height="32"
+              width="32"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v14/icons/css3.svg"
+            />CSS
+          </p>
+          <p>
+            <img
+              height="32"
+              width="32"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v14/icons/react.svg"
+            />React JS
+          </p>
+          <p>
+            <img
+              height="32"
+              width="32"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v14/icons/github.svg"
+            />GitHub
+          </p>
         </div>
+      </div>
     </div>
 
     <div class="parallax-container contato">
-        <div class="parallax"><img src="imgs/pexels-pixabay.jpg"></div>
+      <div class="parallax"><img src="imgs/pexels-pixabay.jpg" /></div>
 
-        <div id="contato" class="section scrollspy">
-            <div class="container">
-                <h1 class="t-red">Contato</h1>
-                <ul>
-                    <li>
-                        <a target="_blank" href="https://www.linkedin.com/in/jonatan-abade/">
-                            <ion-icon name="logo-linkedin"></ion-icon> linkedin.com/in/jonatan-abade</a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://github.com/jonatan-abade">
-                            <ion-icon name="logo-github"></ion-icon> github.com/jonatan-abade</a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://wa.me/5567992617425">
-                            <ion-icon name="logo-whatsapp"></ion-icon> (67) 9 9261-7425</a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="mailto:jonatanabade@gmail.com">
-                            <ion-icon name="mail"></ion-icon> jonatanabade@gmail.com</a>
-                    </li>
-                </ul>
-            </div>
+      <div id="contato" class="section scrollspy">
+        <div class="container">
+          <h1 class="t-red">Contato</h1>
+          <ul>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/jonatan-abade/"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+                linkedin.com/in/jonatan-abade</a
+              >
+            </li>
+            <li>
+              <a target="_blank" href="https://github.com/jonatan-abade">
+                <ion-icon name="logo-github"></ion-icon>
+                github.com/jonatan-abade</a
+              >
+            </li>
+            <li>
+              <a target="_blank" href="https://wa.me/5567992617425">
+                <ion-icon name="logo-whatsapp"></ion-icon> (67) 9 9261-7425</a
+              >
+            </li>
+            <li>
+              <a target="_blank" href="mailto:jonatanabade@gmail.com">
+                <ion-icon name="mail"></ion-icon> jonatanabade@gmail.com</a
+              >
+            </li>
+          </ul>
         </div>
+      </div>
     </div>
 
-    <footer>
-        2025 &copy; Jonatan Abade
-    </footer>
+    <footer>2025 &copy; Jonatan Abade</footer>
     <script src="js/materialize.js"></script>
     <script>
-        M.AutoInit()
+      M.AutoInit();
     </script>
     <script src="js/functions.js"></script>
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-</body>
-
-</html>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-icons@14.12.3/index.min.js"></script>
+  </body>
 </html>

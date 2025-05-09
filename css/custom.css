@@ -27,6 +27,10 @@ body {
   position: relative;
 }
 
+ul.contact-header li a {
+  padding-top: 0.5em;
+}
+
 a.sidenav-trigger {
   margin-left: 5px;
   font-size: 16pt;
@@ -125,6 +129,8 @@ div#conhecimentos p {
 .list-conhecimentos {
   display: flex;
   flex-wrap: wrap;
+  gap: 1em;
+  /* justify-content: space-between; */
 }
 
 .list-conhecimentos p {
@@ -133,7 +139,10 @@ div#conhecimentos p {
   color: var(--red);
   font: bolder 12pt arial;
   text-align: center;
-  margin: 0 0 15px 7.5px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
 }
 
 div#contato ul li {
